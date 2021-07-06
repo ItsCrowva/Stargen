@@ -1,0 +1,83 @@
+{
+    "config": {
+      "decorator": {
+        "type": "decorated",
+        "config": {
+          "outer": {
+            "type": "minecraft:water_depth_threshold",
+            "config": {
+              "max_water_depth": 0
+            }
+          },
+          "inner": {
+            "type": "minecraft:heightmap",
+            "config": {
+              "heightmap": "MOTION_BLOCKING_NO_LEAVES"
+            }
+          }
+        }
+      },
+      "feature": {
+        "type": "minecraft:tree",
+        "config": {
+          "ignore_vines": false,
+          "minimum_size": {
+            "limit": 0,
+            "lower_size": 0,
+            "upper_size": 0,
+            "type": "minecraft:two_layers_feature_size"
+          },
+          "decorators": [],
+          "trunk_provider": {
+            "state": {
+              "Properties": {
+                "axis": "y"
+              },
+              "Name": "minecraft:oak_log"
+            },
+            "type": "minecraft:simple_state_provider"
+          },
+          "foliage_placer": {
+            "radius": 2,
+            "offset": 1,
+            "height": 2,
+            "type": "minecraft:bush_foliage_placer"
+          },
+          "trunk_placer": {
+            "base_height": 1,
+            "height_rand_a": 0,
+            "height_rand_b": 0,
+            "type": "minecraft:straight_trunk_placer"
+          },
+          "foliage_provider": {
+            "state": {
+              "Properties": {
+                "persistent": "false",
+                "distance": "7"
+              },
+              "Name": "minecraft:oak_leaves"
+            },
+            "type": "minecraft:simple_state_provider"
+          },
+          "force_dirt": false,
+          "dirt_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:dirt"
+            }
+          },
+          "sapling_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:oak_sapling",
+              "Properties": {
+                "stage": "0"
+              }
+            }
+          }
+        }
+      }
+    },
+    "type": "minecraft:decorated"
+  }
+  
