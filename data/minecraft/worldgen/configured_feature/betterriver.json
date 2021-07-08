@@ -31,24 +31,31 @@
                   }
                 }
               },
-              "feature": {
-                "type": "minecraft:decorated",
-                "config": {
-                  "decorator": {
-                    "type": "minecraft:count_noise_biased",
-                    "config": {
-                      "noise_to_count_ratio": 1,
-                      "noise_factor": 0.9,
-                      "noise_offset": 0.2
-                    }
-                  },
-                  "feature": "minecraft:lake_water"
+              {
+                "Name": "minecraft:podzol",
+                "Properties": {
+                  "snowy": "false"
                 }
+              },
+              {
+                "Name": "minecraft:coarse_dirt"
+              },
+              {
+                "Name": "minecraft:mycelium",
+                "Properties": {
+                  "snowy": "false"
+                }
+              },
+              {
+                "Name": "minecraft:snow_block"
+              },
+              {
+                "Name": "minecraft:ice"
               }
-            }
+            ]
           }
         }
       }
     }
   }
-  
+}
