@@ -1,6 +1,6 @@
 {
   "surface_builder": "minecraft:grass",
-  "depth": 6.07,
+  "depth": 6.57,
   "scale": 0.05,
   "temperature": 0.8,
   "downfall": 0.4,
@@ -191,6 +191,7 @@
       "minecraft:plain_vegetation",
       "minecraft:flower_plain_decorated",
       "minecraft:patch_grass_plain",
+      "minecraft:smalltreespread",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
