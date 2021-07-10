@@ -51,6 +51,10 @@
                 "feature": "minecraft:oak"
               },
               {
+                "chance": 0.6,
+                "feature": "minecraft:branchedoak"
+              },
+              {
                 "chance": 0.5,
                 "feature": "minecraft:forest_flower_trees"
               },
