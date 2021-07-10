@@ -180,7 +180,8 @@
         "minecraft:disk_sand",
         "minecraft:disk_clay",
         "minecraft:disk_gravel",
-        "minecraft:ore_emerald"
+        "minecraft:ore_emerald",
+        "minecraft:betterriver"
       ],
       [
         "minecraft:rare_dripstone_cluster",
@@ -189,8 +190,7 @@
       ],
       [
         "minecraft:glow_lichen",
-        "minecraft:protrees",
-        "minecraft:betterriver",    
+        "minecraft:protrees", 
         "minecraft:flower_default",
         "minecraft:patch_grass_badlands",
         "minecraft:brown_mushroom_normal",

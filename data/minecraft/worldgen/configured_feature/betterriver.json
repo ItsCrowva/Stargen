@@ -4,73 +4,66 @@
     "decorator": {
       "type": "minecraft:count",
       "config": {
-        "count": 10
+        "count": 17
       }
     },
     "feature": {
       "type": "minecraft:decorated",
       "config": {
         "decorator": {
-          "type": "minecraft:decorated",
-          "config": {
-            "outer": {
-              "type": "minecraft:square",
-              "config": {}
-            },
-            "inner": {
-              "type": "minecraft:heightmap",
-              "config": {
-                "heightmap": "MOTION_BLOCKING"
-              }
-            }
-          }
+          "type": "minecraft:square",
+          "config": {}
         },
         "feature": {
-          "type": "minecraft:ice_patch",
+          "type": "minecraft:decorated",
           "config": {
-            "state": {
-              "Name": "minecraft:glass"
-            },
-            "radius": {
-              "type": "minecraft:uniform",
-              "value": {
-                "min_inclusive": 2,
-                "max_inclusive": 3
+            "decorator": {
+              "type": "minecraft:range",
+              "config": {
+                "height": {
+                  "type": "minecraft:uniform",
+                  "min_inclusive": {
+                    "above_bottom": 130
+                  },
+                  "max_inclusive": {
+                    "absolute": 300
+                  }
+                }
               }
             },
-            "half_height": 1,
-            "targets": [
-              {
-                "Name": "minecraft:dirt"
-              },
-              {
-                "Name": "minecraft:grass_block",
-                "Properties": {
-                  "snowy": "false"
-                }
-              },
-              {
-                "Name": "minecraft:podzol",
-                "Properties": {
-                  "snowy": "false"
-                }
-              },
-              {
-                "Name": "minecraft:coarse_dirt"
-              },
-              {
-                "Name": "minecraft:mycelium",
-                "Properties": {
-                  "snowy": "false"
-                }
-              },
-              {
-                "Name": "minecraft:snow_block"
-              },
-              {
-                "Name": "minecraft:ice"
+            "feature": {
+              "type": "minecraft:ore",
+              "config": {
+                "size": 33,
+                "discard_chance_on_air_exposure": 0,
+                "targets": [
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:dirt"
+                    },
+                    "state": {
+                      "Name": "minecraft:water",
+                      "Properties": {
+                        "level": "15"
+                      }
+                    }
+                  },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:grass_block"
+                    },
+                    "state": {
+                      "Name": "minecraft:water",
+                      "Properties": {
+                        "level": "15"
+                      }
+                    }
+                  }
+                ]
               }
-            ]
+            }
           }
         }
       }
