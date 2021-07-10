@@ -1,6 +1,6 @@
 {
   "pack": {
     "pack_format": 7,
-    "description": "better than stargen"
+    "description": [{"text":"[Spidergen]","color":"#280a54"},{"text":" Something here","color":"#502491"}]
   }
 }
