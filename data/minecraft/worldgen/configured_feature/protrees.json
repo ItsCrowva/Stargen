@@ -4,7 +4,7 @@
     "decorator": {
       "type": "minecraft:count_extra",
       "config": {
-        "count": 19,
+        "count": 29,
         "extra_count": 12,
         "extra_chance": 0.2
       }
@@ -43,27 +43,27 @@
           "config": {
             "features": [
               {
-                "chance": 0.9,
+                "chance": 0.3,
                 "feature": "minecraft:goodbush"
               },
               {
-                "chance": 0.6,
+                "chance": 0.3,
                 "feature": "minecraft:oak"
               },
               {
-                "chance": 0.6,
+                "chance": 0.8,
                 "feature": "minecraft:branchedoak"
               },
               {
-                "chance": 0.5,
+                "chance": 0.15,
                 "feature": "minecraft:forest_flower_trees"
               },
               {
-                "chance": 0.3,
+                "chance": 0.4,
                 "feature": "minecraft:mountree"
               },
               {
-                "chance": 0.5,
+                "chance": 0.25,
                 "feature": "minecraft:fancy_oak"
               }
             ],
