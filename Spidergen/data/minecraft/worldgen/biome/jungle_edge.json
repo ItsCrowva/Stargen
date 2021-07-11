@@ -1,5 +1,5 @@
 {
-  "scale": 0.2,
+  "scale": 0.5,
   "effects": {
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
@@ -7,12 +7,13 @@
       "block_search_extent": 8,
       "offset": 2.0
     },
-    "sky_color": 7842047,
-    "fog_color": 12638463,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    "sky_color": 11055042,
+    "fog_color": 7896711,
+    "water_color": 8887492,
+    "water_fog_color": 3618627,
+    "grass_color": 2969138
   },
-  "surface_builder": "minecraft:grass",
+  "surface_builder": "spidergen:australia_mountain",
   "carvers": {
     "air": [
       "minecraft:prototype_cave",
@@ -65,26 +66,22 @@
     ],
     [
       "minecraft:prototype_glow_lichen",
-      "minecraft:trees_jungle_edge",
-      "minecraft:flower_warm",
-      "minecraft:patch_grass_jungle",
+      "spidergen:protrees",
+      "minecraft:flower_default",
+      "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
-      "minecraft:prototype_spring_water",
-      "minecraft:spring_lava",
-      "minecraft:patch_melon",
-      "minecraft:prototype_vines"
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
     ],
-    [
-      "minecraft:freeze_top_layer"
-    ]
+    []
   ],
   "starts": [
     "minecraft:mineshaft",
     "minecraft:stronghold",
-    "minecraft:ruined_portal_jungle"
+    "minecraft:ruined_portal_mountain"
   ],
   "spawners": {
     "monster": [
@@ -163,9 +160,21 @@
         "maxCount": 4
       },
       {
-        "type": "minecraft:chicken",
-        "weight": 10,
+        "type": "minecraft:wolf",
+        "weight": 8,
         "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:rabbit",
+        "weight": 4,
+        "minCount": 2,
+        "maxCount": 3
+      },
+      {
+        "type": "minecraft:fox",
+        "weight": 8,
+        "minCount": 2,
         "maxCount": 4
       }
     ],
@@ -198,8 +207,8 @@
   "spawn_costs": {},
   "player_spawn_friendly": false,
   "precipitation": "rain",
-  "temperature": 0.95,
-  "downfall": 0.8,
-  "category": "jungle",
-  "depth": 0.1
+  "temperature": 0.2,
+  "downfall": 0.3,
+  "category": "extreme_hills",
+  "depth": 8
 }

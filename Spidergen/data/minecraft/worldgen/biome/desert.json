@@ -69,6 +69,7 @@
     [
       "minecraft:prototype_glow_lichen",
       "minecraft:flower_default",
+      "spidergen:emriver",
       "minecraft:patch_grass_badlands",
       "minecraft:patch_dead_bush_2",
       "minecraft:brown_mushroom_normal",

@@ -1,0 +1,144 @@
+{
+    "type": "minecraft:decorated",
+    "config": {
+      "decorator": {
+        "type": "minecraft:count_extra",
+        "config": {
+          "count": 1000,
+          "extra_count": 0,
+          "extra_chance": 0
+        }
+      },
+      "feature": {
+        "type": "minecraft:decorated",
+        "config": {
+          "decorator": {
+            "type": "minecraft:square",
+            "config": {}
+          },
+          "feature": {
+            "type": "minecraft:decorated",
+            "config": {
+              "decorator": {
+                "type": "minecraft:count_noise_biased",
+                "config": {
+                  "noise_to_count_ratio": 1,
+                  "noise_factor": 180,
+                  "noise_offset": 0.035
+                }
+              },
+              "feature": {
+                "type": "minecraft:decorated",
+                "config": {
+                  "decorator": {
+                    "type": "minecraft:count_noise_biased",
+                    "config": {
+                      "noise_to_count_ratio": -1,
+                      "noise_factor": 180,
+                      "noise_offset": 0.01
+                    }
+                  },
+                  "feature": {
+                    "type": "minecraft:decorated",
+                    "config": {
+                      "decorator": {
+                        "type": "minecraft:heightmap",
+                        "config": {
+                          "heightmap": "MOTION_BLOCKING"
+                        }
+                      },
+                      "feature": {
+                        "type": "minecraft:decorated",
+                        "config": {
+                          "decorator": {
+                            "type": "minecraft:count",
+                            "config": {
+                              "count": 4
+                            }
+                          },
+                          "feature": {
+                            "type": "minecraft:decorated",
+                            "config": {
+                              "decorator": {
+                                "type": "minecraft:count",
+                                "config": {
+                                  "count": 2
+                                }
+                              },
+                              "feature": {
+                                "type": "minecraft:decorated",
+                                "config": {
+                                  "decorator": {
+                                    "type": "minecraft:decorated",
+                                    "config": {
+                                      "outer": {
+                                        "type": "minecraft:square",
+                                        "config": {}
+                                      },
+                                      "inner": {
+                                        "type": "minecraft:heightmap",
+                                        "config": {
+                                          "heightmap": "MOTION_BLOCKING"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "feature": {
+                                    "type": "minecraft:ore",
+                                    "config": {
+                                      "size": 33,
+                                      "discard_chance_on_air_exposure": 0,
+                                      "targets": [
+                                        {
+                                          "target": {
+                                            "predicate_type": "minecraft:block_match",
+                                            "block": "minecraft:oak_log"
+                                          },
+                                          "state": {
+                                            "Name": "minecraft:air"
+                                          }
+                                        },
+                                        {
+                                          "target": {
+                                            "predicate_type": "minecraft:block_match",
+                                            "block": "minecraft:dirt"
+                                          },
+                                          "state": {
+                                            "Name": "minecraft:water",
+                                            "Properties": {
+                                              "level": "15"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "target": {
+                                            "predicate_type": "minecraft:block_match",
+                                            "block": "minecraft:grass_block"
+                                          },
+                                          "state": {
+                                            "Name": "minecraft:water",
+                                            "Properties": {
+                                              "level": "15"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
