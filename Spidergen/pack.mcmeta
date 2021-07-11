@@ -1,6 +1,6 @@
 {
   "pack": {
     "pack_format": 7,
-    "description": [{"text":"[Spidergen]","color":"#280a54"},{"text":" Something here","color":"#502491"}]
+    "description": ["",{"text":"[ Stargen ] ","bold":true,"color":"#FFE660"},{"text":"|","bold":true,"color":"#F8000F"},{"text":" 1.0 (100)","color":"#FF8C00"}]
   }
 }
