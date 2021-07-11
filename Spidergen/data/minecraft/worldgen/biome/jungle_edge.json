@@ -1,90 +1,45 @@
 {
-  "scale": 0.5,
+  "surface_builder": "minecraft:grass",
+  "depth": 0.1,
+  "scale": 0.2,
+  "temperature": 0.95,
+  "downfall": 0.9,
+  "precipitation": "rain",
+  "category": "jungle",
+  "player_spawn_friendly": true,
   "effects": {
+    "sky_color": 0,
+    "fog_color": 1974826,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color_modifier": "dark_forest",
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
-      "offset": 2.0
+      "offset": 2
     },
-    "sky_color": 11055042,
-    "fog_color": 7896711,
-    "water_color": 8887492,
-    "water_fog_color": 3618627,
-    "grass_color": 2969138
+    "particle": {
+      "options": {
+        "type": "ash"
+      },
+      "probability": 0.2
+    }
   },
-  "surface_builder": "spidergen:australia_mountain",
-  "carvers": {
-    "air": [
-      "minecraft:prototype_cave",
-      "minecraft:prototype_canyon",
-      "minecraft:prototype_crevice"
-    ]
-  },
-  "features": [
-    [],
-    [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
-    ],
-    [
-      "minecraft:amethyst_geode"
-    ],
-    [
-      "minecraft:monster_room"
-    ],
-    [],
-    [],
-    [
-      "minecraft:prototype_ore_dirt",
-      "minecraft:prototype_ore_gravel",
-      "minecraft:prototype_ore_granite",
-      "minecraft:prototype_ore_diorite",
-      "minecraft:prototype_ore_andesite",
-      "minecraft:prototype_ore_tuff",
-      "minecraft:prototype_ore_coal_upper",
-      "minecraft:prototype_ore_coal_lower",
-      "minecraft:prototype_ore_iron_upper",
-      "minecraft:prototype_ore_iron_middle",
-      "minecraft:prototype_ore_iron_small",
-      "minecraft:prototype_ore_gold",
-      "minecraft:prototype_ore_redstone",
-      "minecraft:prototype_ore_redstone_lower",
-      "minecraft:prototype_ore_diamond",
-      "minecraft:prototype_ore_diamond_large",
-      "minecraft:prototype_ore_lapis",
-      "minecraft:prototype_ore_lapis_buried",
-      "minecraft:prototype_ore_copper",
-      "minecraft:prototype_underwater_magma",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel"
-    ],
-    [
-      "minecraft:rare_dripstone_cluster",
-      "minecraft:rare_small_dripstone"
-    ],
-    [
-      "minecraft:prototype_glow_lichen",
-      "spidergen:protrees",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_badlands",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
-    []
-  ],
   "starts": [
+    "minecraft:jungle_pyramid",
     "minecraft:mineshaft",
     "minecraft:stronghold",
-    "minecraft:ruined_portal_mountain"
+    "minecraft:ruined_portal_jungle"
   ],
   "spawners": {
     "monster": [
+      {
+        "type": "minecraft:wither_skeleton",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 4
+      },
       {
         "type": "minecraft:spider",
         "weight": 100,
@@ -132,9 +87,21 @@
         "weight": 5,
         "minCount": 1,
         "maxCount": 1
+      },
+      {
+        "type": "minecraft:ocelot",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 3
       }
     ],
     "creature": [
+      {
+        "type": "minecraft:spider",
+        "weight": 12,
+        "minCount": 2,
+        "maxCount": 7
+      },
       {
         "type": "minecraft:sheep",
         "weight": 12,
@@ -160,21 +127,9 @@
         "maxCount": 4
       },
       {
-        "type": "minecraft:wolf",
-        "weight": 8,
+        "type": "minecraft:chicken",
+        "weight": 10,
         "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:rabbit",
-        "weight": 4,
-        "minCount": 2,
-        "maxCount": 3
-      },
-      {
-        "type": "minecraft:fox",
-        "weight": 8,
-        "minCount": 2,
         "maxCount": 4
       }
     ],
@@ -205,10 +160,59 @@
     "misc": []
   },
   "spawn_costs": {},
-  "player_spawn_friendly": false,
-  "precipitation": "rain",
-  "temperature": 0.2,
-  "downfall": 0.3,
-  "category": "extreme_hills",
-  "depth": 8
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [
+      "minecraft:monster_room"
+    ],
+    [],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite",
+      "minecraft:ore_diorite",
+      "minecraft:ore_andesite",
+      "minecraft:ore_tuff",
+      "minecraft:ore_deepslate",
+      "minecraft:ore_coal",
+      "minecraft:ore_iron",
+      "minecraft:ore_gold",
+      "minecraft:ore_redstone",
+      "minecraft:ore_diamond",
+      "minecraft:ore_lapis",
+      "minecraft:ore_copper",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
+    ],
+    [
+      "minecraft:rare_dripstone_cluster",
+      "minecraft:rare_small_dripstone"
+    ],
+    [
+      "spidergen:sinistertree",
+      "minecraft:glow_lichen",
+      "minecraft:flower_warm",
+      "minecraft:patch_grass_jungle",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin",
+      "minecraft:spring_water",
+      "minecraft:spring_lava",
+      "minecraft:patch_melon"
+    ],
+    []
+  ]
 }
