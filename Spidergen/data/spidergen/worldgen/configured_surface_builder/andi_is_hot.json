@@ -2,7 +2,7 @@
     "type": "minecraft:default",
     "config": {
       "top_material": {
-        "Name": "minecraft:water",
+        "Name": "minecraft:lava",
         "Properties": {
           "level": "15"
         }
